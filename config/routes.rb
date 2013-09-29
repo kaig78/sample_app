@@ -8,6 +8,8 @@ match '/contact', to: 'static_pages#contact'
 match '/static_pages/home', :to =>'static_pages#home'
 match '/signup',  to: 'users#new',            via: 'get'
 
+resources :users
+match '/signup',  to: 'users#new',            via: 'get'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
